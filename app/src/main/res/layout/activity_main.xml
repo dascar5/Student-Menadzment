@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/uputstvo"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Uputstvo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/izbrisiSve"
+        app:layout_constraintTop_toBottomOf="@+id/pregledSve" />
+
+    <Button
+        android:id="@+id/izbrisi"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Izbriši"
+        app:layout_constraintBottom_toTopOf="@+id/pregledSve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dodaj"
+        app:layout_constraintTop_toBottomOf="@+id/brojPoena" />
+
+    <EditText
+        android:id="@+id/ime"
+        android:layout_width="369dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Ime i prezime"
+        app:layout_constraintBottom_toTopOf="@+id/sifraPredmeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indeks" />
+
+    <EditText
+        android:id="@+id/indeks"
+        android:layout_width="369dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Indeks"
+        app:layout_constraintBottom_toTopOf="@+id/ime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sifraPredmeta"
+        android:layout_width="369dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Šifra predmeta"
+        app:layout_constraintBottom_toTopOf="@+id/kolokvijum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ime" />
+
+    <Button
+        android:id="@+id/pregledSve"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Pregled"
+        app:layout_constraintBottom_toTopOf="@+id/uputstvo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pregled"
+        app:layout_constraintTop_toBottomOf="@+id/izbrisi" />
+
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Dodaj"
+        app:layout_constraintBottom_toTopOf="@+id/pregled"
+        app:layout_constraintEnd_toStartOf="@+id/izbrisi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brojPoena" />
+
+    <Button
+        android:id="@+id/pregled"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Pretraga"
+        app:layout_constraintBottom_toTopOf="@+id/izbrisiSve"
+        app:layout_constraintEnd_toStartOf="@+id/pregledSve"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dodaj" />
+
+    <EditText
+        android:id="@+id/kolokvijum"
+        android:layout_width="369dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Kolokvijum"
+        app:layout_constraintBottom_toTopOf="@+id/brojPoena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifraPredmeta" />
+
+    <EditText
+        android:id="@+id/brojPoena"
+        android:layout_width="369dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Broj poena"
+        app:layout_constraintBottom_toTopOf="@+id/izbrisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kolokvijum" />
+
+    <Button
+        android:id="@+id/izbrisiSve"
+        android:layout_width="160dp"
+        android:layout_height="111dp"
+        android:text="Izbriši sve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/uputstvo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregled" />
+
+</android.support.constraint.ConstraintLayout>
